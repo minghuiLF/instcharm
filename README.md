@@ -24,3 +24,15 @@ Some of the skills/concepts this project aims to and build upon:
 
 
 <img width=600 src="demo/demo1.png"><img/>
+
+
+<div align="center">
+    <img width=200 src="demo/demo3.png">
+    <img width=200 src="demo/demo2.png">
+</div>
+
+<img width=600 src="demo/demo4.png">
+
+<img width=600 src="demo/demo5.png">
+
+<img width=600 src="demo/demo6.png">
