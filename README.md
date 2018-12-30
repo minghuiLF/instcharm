@@ -116,8 +116,7 @@ Note users can ignore this if they properly implement Level 3's Infinite Scroll.
 Users can see their own profile information such as username, number of posts, sum of likes they received on all their posts, etc. You may choose to utilise the information from the api in more creative ways such as displaying their most liked post etc. Get this information from (GET /user)
 
 ## Level 3
-Level 3 focuses on more advanced features that will take time to implement and will
-involve a more rigourously designed app to execute.
+
 
 **Infinite Scroll**
 Instead of pagination, users an infinitely scroll through results. For infinite scroll to be
@@ -151,22 +150,3 @@ Add just the count of followers / follows to everyones public user page
 **Delete/Update Post**
 Let a user update a post they made or delete it via (`DELETE /post`) or (`PUT /post`)
 
-## Level 4
-
-**Slick UI**
-The user interface looks good, is performant, makes logical sense, and is usable.
-
-**Push Notifications**
-Users can receive push notifications when a user they follow posts an image. Notification can be accessed at (`GET /latest`)
-
-**Offline Access**
-Users can access the "Instacram" at all times by using Web Workers to cache the page (and previous content) locally.
-
-**Fragment based URL routing**
-Users can access different pages using URL fragments:
-
-```
-/#profile=me
-/#feed
-/#profile=janecitizen
-```
