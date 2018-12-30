@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.1/examples/album/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Instacram</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Album example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Album example for Bootstrap_files/album.css" rel="stylesheet">
+    <!-- icon styles for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row-sm-8 ">
+
+              <h4 id="profile-user" class="text-white">nanfei</h4>
+              <p id="profile-email" class="text-muted">nanfei@sb.com</p>
+
+
+              <hr>
+          </div>
+          <!-- <div class="row" style="height: 1px;background-color: white;">
+
+          </div> -->
+          <div class="row">
+
+              <!-- <h4 class="text-white">Contact</h4> -->
+              <!-- <div class="col-md ">
+                <p id="lll" class="text-white text-left">
+                300
+                <label for="lll"><i  class="fas fa-heart "> </i><b> Total </b></label>
+
+                </p>
+              </div> -->
+              <div class="col-md">
+                <p id="ppp" class="text-white">
+                2000
+                <label for="ppp"><i class="fas fa-camera-retro"></i><b> Posts</b></label>
+
+                </p>
+              </div>
+              <div class="col-md">
+                <p id="fff" class="text-white">
+                2000
+                <label for="ppp"><i class="fas fa-users"></i><b> Follower </b></label>
+
+                </p>
+              </div>
+              <div class="col-md">
+                <p id="fifi" class="text-white">
+                666
+                <label for="ppp"><i class="fas fa-award"></i><b> Following</b></label>
+
+                </p>
+              </div>
+              <div class="col-md-3">
+
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="http://127.0.0.1:8080/" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Instacram</strong>
+          </a>
+          <button class="navbar-toggler" id="profilebt" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="display:none">
+            <i class="fas fa-user" ></i>
+          </button>
+
+        </div>
+        <div class="col">
+          <button class="navbar-toggler" id="addingpostbt" type="button" data-toggle="modal" data-target="#postModal" aria-controls="navbarHeader"  style="display:none">
+            <i class="fas fa-plus " ></i>
+
+          </button>
+        </div>
+
+        <div class="logout">
+          <a id="logoutbut"  class="btn btn-light btn-block " data-toggle="modal" data-target="#exampleModal" style="display:none">Log out</a>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <!-- <a  class="btn btn-light btn-block " data-toggle="modal" data-target="#exampleModal" >Log out</a> -->
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">You are Loging out</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Are you sure you want log out!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary" id="logout" >Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center" id="wellcome">
+        <div class="container">
+          <h1 class="jumbotron-heading">Instacram</h1>
+          <p class="lead text-muted">Make you share happen, join Instacram and share your happiness with you friend ,find what fantastic happend in the world.</p>
+          <p>
+            <a href="http://127.0.0.1:8080/login.html" class="btn btn-primary btn-block my-2">Log in</a>
+            <a href="http://127.0.0.1:8080/signup.html" class="btn btn-secondary btn-block ">Registration</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row" id="large-feed">
+
+
+
+            <!-- <div class="btn btn-primary" onclick="$('#exampleModalCenter').modal()"  >
+                adasa
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+      </button> -->
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Upload New Post</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Choosing a image!</label>
+                  <input type="file" onchange="selectImage(this);" class="form-control btn btn-light" id="exampleFormControlFile1">
+                  <hr>
+                  <input class="form-control" type="text" id="imagedes" placeholder="Description for your post">
+                </div>
+              </form>
+              <div class="">
+                <img id="imagelook"src=""  style="max-width:330px" />
+                <div class="text-success" id="imgfeedback">
+
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" onclick="uploadImage()" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5> -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-7" style="max-width:380px">
+                    <div class="row">
+
+
+                    <img id="detail-img" src="data:image/png;base64,"  style="height: 100%; width: 100%; display: ;">
+                    </div>
+
+                    <div class="row text-item-center">
+                      <h6 id= "author">username</h6>
+                    </div>
+                  </div>
+                  <div class="col-lg card border-light" id="card" style="font-size:0.9rem">
+
+                    <div class="card-body">
+
+                      <div class="row">
+
+                        <div class="col-sm-4 "  >
+                          <i id="liked-count" class="fas fa-heart "> 666</i>
+
+                          <div class="row" style="overflow-y: auto;height:400px;">
+                            <div data-spy="scroll" id="likelist"  data-offset="0" class="scrollspy-example" >
+
+
+
+                            </div>
+                          </div>
+
+
+                        </div>
+                        <div class="col text-center" >
+                        <i class="fas fa-comment "> Conments</i>
+                          <div class="row" style="overflow-y: auto;overflow-x: auto;height:400px;">
+                            <div data-spy="scroll" id="conments" width=""   data-offset="0" class="scrollspy-example text-left " >
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a >Back to top</a>
+        </p>
+        <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="https://getbootstrap.com/docs/4.1/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/4.1/getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Album example for Bootstrap_files/jquery-3.3.1.slim.min.js.下载" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./Album example for Bootstrap_files/popper.min.js.下载"></script>
+    <script src="./Album example for Bootstrap_files/bootstrap.min.js.下载"></script>
+    <script src="./Album example for Bootstrap_files/holder.min.js.下载"></script>
+      <script type="module" src="src/main.js"></script>
+      <script type="module" src="src/uploadimg.js"></script>
+      <script type="module" src="src/profile.js"></script>
+
+
+<audio controls="controls" style="display: none;"></audio><svg xmlns="http://www.w3.org/2000/svg" width="288" height="225" viewBox="0 0 288 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="14" style="font-weight:bold;font-size:14pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
